@@ -30,9 +30,25 @@
     - 机会： 智能投顾、量化、自动生成财报摘要、合同审查、低代码金融分析工具、生成式AI金融文档理解与创作 
     - 挑战： 行业壁垒高，专家-工程师鸿沟，伦理与问责、数据隐私与安全
 
-> 总结对毕设的思考：
-> - 路线：通用 LLM（Coze）+ 结构化预测模型/信号 + XAI + RAG + 合规/忠实度约束生成 + 评估体系，关键在 XAI 和 忠实度上
 
+**总结对毕设的思考：**
 
+路线：通用 LLM（Coze）+ 结构化预测模型/信号 + XAI + RAG + 合规/忠实度约束生成 + 评估体系
+
+关键在 解释忠实度（faithfulness）与证据可核验性（grounding/verifiability）：
+解释必须与 XAI 归因方向一致，并能逐条追溯到 RAG 检索证据
+
+## 2. Evaluation of Retrieval-Augmented Generation
+
+[Evaluation of Retrieval-Augmented Generation](https://arxiv.org/pdf/2405.07437)
+
+关键内容 **Auepora 三问**
+- What to Evaluate?
+- How to Evaluate?
+- How to Measure?
+
+（本篇内容在当前阶段不关键，预计在具体实现以及评估的时候可以借鉴一下评估方法）
+
+## 3. 同花顺问财AI
 
 
